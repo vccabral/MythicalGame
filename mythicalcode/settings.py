@@ -41,7 +41,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_nose',
-    'database',
+    'base',
 )
 
 TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
@@ -50,7 +50,7 @@ NOSE_ARGS = [
     '--with-coverage',
     '--failed', 
     '--stop',
-    '--cover-package=mythicalcode,database',
+    '--cover-package=mythicalcode,base',
     '--cover-min-percentage=100',
     '--cover-branches',
     '--cover-tests',

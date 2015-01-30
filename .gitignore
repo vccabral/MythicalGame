@@ -2,3 +2,4 @@ venv/*
 .noseids
 .coverage
 *.pyc
+db.sqlite3
