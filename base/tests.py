@@ -1,5 +1,5 @@
 from django.test import TestCase
-from database.models import UserProfile
+from base.models import UserProfile
 
 class ModelsTestCase(TestCase):
 	def test_profile(self):
