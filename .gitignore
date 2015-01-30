@@ -1,0 +1,4 @@
+venv/*
+.noseids
+.coverage
+*.pyc
