@@ -40,20 +40,23 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django_nose',
     'base',
+    'django_nose',
+    'mock',
+    'rest_framework',
 )
 
 TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 
 NOSE_ARGS = [
-    '--with-coverage',
+    # '--with-coverage',
     '--failed', 
     '--stop',
-    '--cover-package=mythicalcode,base',
-    '--cover-min-percentage=100',
-    '--cover-branches',
-    '--cover-tests',
+    '--verbosity=2',
+    # '--cover-package=mythicalcode,base',
+    # '--cover-min-percentage=100',
+    # '--cover-branches',
+    # '--cover-tests',
 ]
 
 

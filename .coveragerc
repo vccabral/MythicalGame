@@ -1,4 +1,4 @@
 [run]
 omit =
-  mythicalcode/settings.py
-  base/models.py
+  base/tests/*
+  mythicalcode/wsgi.py

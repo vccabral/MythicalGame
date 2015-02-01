@@ -1,1 +1,3 @@
-./manage.py test 
+set -e
+coverage run --source base,mythicalcode  --branch ./manage.py test 
+coverage report -m --fail-under 100
